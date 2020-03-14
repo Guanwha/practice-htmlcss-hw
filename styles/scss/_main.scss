@@ -1,0 +1,70 @@
+
+@mixin imageInsteadOfText {
+  display: block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// header
+.nav {
+  height: 28px;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 13px;
+  a {
+    font-size: 14px;
+    img {
+      margin: 3px;
+    }
+  }
+  .line-1-12 {
+    width: 1px;
+    height: 12px;
+    background: #cccccc;
+    margin: 8px;
+  }
+}
+
+.navbar {
+  height: 48px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 21px;
+  
+  h1 a {
+    width: 170px;
+    height: 36px;
+    background: url('../../images/logo.png');
+    @include imageInsteadOfText();
+  }
+  ul {
+    height: 100%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    li {
+      height: 100%;
+      padding: 0 1rem;
+      display: flex;
+      box-sizing: border-box;
+      &:hover, &.active {
+        border-bottom: 3px solid #00cc99;
+      }
+      a {
+        color: #00cc99;
+      }
+    }
+  }
+}
