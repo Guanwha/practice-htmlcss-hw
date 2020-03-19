@@ -136,3 +136,32 @@ a {
     line-height: 22px;
   }
 }
+
+// differences table
+.diff {
+  margin: 64px 84px 0;
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  table {
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 36px;
+
+    th, td {
+      width: 20%;
+      min-width: 170px;
+      border-top: 1px solid #dddddd;
+      border-bottom: 1px solid #dddddd;
+      padding-left: 22px;
+      text-align: left;
+    }
+    th {
+      background: #f7f7f7;
+    }
+    .highlight {
+      color: #22b28e;
+    }
+  }
+}
