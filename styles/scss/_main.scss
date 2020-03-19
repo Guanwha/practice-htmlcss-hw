@@ -165,3 +165,57 @@ a {
     }
   }
 }
+
+// feedback
+.feedback {
+  margin-top: 61px;
+  padding: 30px 31px;
+  background: linear-gradient(#00644B, #009872);
+  color: white;
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+  }
+  form {
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+  }
+  textarea {
+    width: 48%;
+    resize: none;
+    border-radius: 3px;
+    border: 1px solid #E1E1E1;
+  }
+  .info {
+    width: 48%;
+    label {
+      font-size: 15px;
+      line-height: 24px;
+    }
+    input {
+      width: 100%;
+      border-radius: 3px;
+      border: 1px solid #E1E1E1;
+      font-size: 15px;
+      line-height: 32px;
+      margin-bottom: 13px;
+      padding: 0 10px;
+    }
+    .btn-submit {
+      width: auto;
+      padding: 5px 20px;
+      float: right;
+      background: #00CC99;
+      color: white;
+      font-size: 15px;
+      line-height: 24px;
+      border: none;
+      &:hover {
+        background: #00CC99 * 0.9;
+        transition: 0.2s;
+      }
+    }
+  }
+}
