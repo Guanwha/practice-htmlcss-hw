@@ -5,6 +5,15 @@
   white-space: nowrap;
   overflow: hidden;
 }
+@mixin formInput {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #E1E1E1;
+  font-size: 15px;
+  line-height: 32px;
+  padding: 0 10px;
+  background: white;
+}
 
 * {
   box-sizing: border-box;
@@ -189,27 +198,16 @@ a {
   .msg-box {
     width: 48%;
     textarea {
+      @include formInput;
       height: calc(100% - 24px);
-      width: 100%;
-      border-radius: 3px;
-      border: 1px solid #E1E1E1;
-      font-size: 15px;
-      line-height: 24px;
-      padding: 0 10px;
       resize: none;
     }
   }
   .info-box {
     width: 48%;
     input {
-      width: 100%;
-      border-radius: 3px;
-      border: 1px solid #E1E1E1;
-      font-size: 15px;
-      line-height: 32px;
+      @include formInput;
       margin-bottom: 13px;
-      padding: 0 10px;
-      background: white;
     }
     .btn-submit {
       width: auto;
