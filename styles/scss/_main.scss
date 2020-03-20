@@ -18,6 +18,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;  // Not Supported: IE, Safari
+}
 body {
   max-width: 1024px;
   margin: 0 auto;
@@ -247,5 +250,20 @@ a {
     .highlight {
       color: #E12D80;
     }
+  }
+}
+
+// independent button
+.totop {
+  position: fixed;
+  left: 19px;
+  bottom: 22px;
+  background: url('../../images/logo_symbol.png');
+  width: 41px;
+  height: 36px;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 1px #00CC99);
   }
 }
