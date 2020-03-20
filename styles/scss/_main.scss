@@ -13,10 +13,17 @@
   line-height: 32px;
   padding: 0 10px;
   background: white;
+  &:focus {
+    outline: 2px solid #00CC99;
+    box-shadow: 0 0 5px #00CC99;
+  }
 }
 
 * {
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;  // Not Supported: IE, Safari
 }
 body {
   max-width: 1024px;
@@ -247,5 +254,20 @@ a {
     .highlight {
       color: #E12D80;
     }
+  }
+}
+
+// independent button
+.totop {
+  position: fixed;
+  left: 19px;
+  bottom: 22px;
+  background: url('../../images/logo_symbol.png');
+  width: 41px;
+  height: 36px;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 1px #00CC99);
   }
 }
