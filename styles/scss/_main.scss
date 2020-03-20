@@ -5,6 +5,15 @@
   white-space: nowrap;
   overflow: hidden;
 }
+@mixin formInput {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #E1E1E1;
+  font-size: 15px;
+  line-height: 32px;
+  padding: 0 10px;
+  background: white;
+}
 
 * {
   box-sizing: border-box;
@@ -182,30 +191,28 @@ a {
     display: flex;
     justify-content: space-between;
   }
-  textarea {
-    width: 48%;
-    resize: none;
-    border-radius: 3px;
-    border: 1px solid #E1E1E1;
+  label {
+    font-size: 15px;
+    line-height: 24px;
   }
-  .info {
+  .msg-box {
     width: 48%;
-    label {
-      font-size: 15px;
-      line-height: 24px;
+    textarea {
+      @include formInput;
+      height: calc(100% - 24px);
+      resize: none;
     }
+  }
+  .info-box {
+    width: 48%;
     input {
-      width: 100%;
-      border-radius: 3px;
-      border: 1px solid #E1E1E1;
-      font-size: 15px;
-      line-height: 32px;
+      @include formInput;
       margin-bottom: 13px;
-      padding: 0 10px;
     }
     .btn-submit {
       width: auto;
       padding: 5px 20px;
+      margin-top: 8px;
       float: right;
       background: #00CC99;
       color: white;
@@ -215,6 +222,7 @@ a {
       &:hover {
         background: #00CC99 * 0.9;
         transition: 0.2s;
+        cursor: pointer;
       }
     }
   }
