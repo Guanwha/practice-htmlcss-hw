@@ -219,3 +219,25 @@ a {
     }
   }
 }
+
+// footer
+.footer {
+  margin-top: 25px;
+  padding: 0 21px 10px;
+  img {
+    float: left;
+  }
+  .contact {
+    float: right;
+    li {
+      font-size: 15px;
+      line-height: 24px;
+    }
+    a {
+      display: inline;
+    }
+    .highlight {
+      color: #E12D80;
+    }
+  }
+}
